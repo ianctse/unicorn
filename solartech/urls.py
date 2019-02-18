@@ -20,5 +20,5 @@ from django.views.generic import RedirectView
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('pvmodules/', include('pvmodules.urls')),
-    path('', RedirectView.as_view(url='/pvmodules/', permanent=True))
+    path('', RedirectView.as_view(url='pvmodules/', permanent=True))
 ]
