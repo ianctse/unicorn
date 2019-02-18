@@ -1,0 +1,9 @@
+<h1>Manufacturer</h1>
+
+<ul>
+{% for Manufacturer in object_list %}
+    <li>{{ manufacturer.legal_name }} ({{ manufacturer.short_name }}) - {{ manufacturer.hq_city }} , {{ manufacturer.hq_country }}</li>
+</ul>
+
+
+
